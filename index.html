@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <!-- Normalize -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'/>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Urbanist:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Script -->
+    <script src="./app.js" defer></script>
+    <!-- SEO meta tags -->
+    <link rel="shortcut icon" href="./icons/lunch.svg" type="image/x-icon">
+    <meta name="author" content="Lester Howard">
+    <meta name="description" content="Search for meals, and open the details for each one from TheMealDB API">
+</head>
+<body>
+    <header>
+        <nav class="container nav">
+            <a href="/" class="header__logo">
+                <img src="./icons/lunch.svg" alt="MealFinder Logo">
+                <h1 class="header__title">Meal Finder</h1>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <form class="topbar">
+            <div class="topbar__search ">
+                <input class="topbar__input" type="search" placeholder="Typing..."></input>
+                <button class="topbar__submit">
+                    <i class="topbar__icon fas fa-search"></i>
+                </button>
+            </div>
+            <div class="topbar__wrapper">
+                <button class="topbar__random">
+                    <i class="topbar__icon fas fa-random"></i>
+                </button>
+            </div>
+        </form>
+        <!-- topbar -->
+
+        <div class="container">
+            <div class="results">
+                <div class="results__heading">
+                    <p class="heading__title">Find beef, pork, salmon, etc and click for more details</p>
+                </div>
+                <div class="results__meals"></div>
+                <div class="results__singlemeal"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
